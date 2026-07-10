@@ -4,7 +4,7 @@ Plateforme complète de mise en relation employeurs / candidats : publication d'
 
 ## Stack technique
 
-- **Backend** : Node.js, Express.js, Sequelize (ORM), SQLite (base de données fichier, aucune installation de serveur DB requise), JWT (authentification), Multer (upload de fichiers), bcrypt.js.
+- **Backend** : Node.js, Express.js, SQLite (base de données fichier, aucune installation de serveur DB requise), JWT (authentification), Multer (upload de fichiers), bcrypt.js.
 - **Frontend** : React 18 (Vite), React Router, Tailwind CSS, Axios.
 
 ## Structure du projet
