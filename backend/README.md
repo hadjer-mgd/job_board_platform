@@ -1,9 +1,8 @@
- Job Board Platform : to handle job listings, employers, candidates and applications. 
-● Design database models for employers, job listings, candidates, resumes, and job applications and for posting jobs, searching jobs, uploading resumes, applying for jobs, and tracking applications. 
+ Job Board Platform : to handle job listings, employers, candidates and applications and for posting jobs, searching jobs, uploading resumes, applying for jobs, and tracking applications. 
 
 # Backend — Job Board API
 
-API REST construite avec Express.js et Sequelize (SQLite).
+API REST construite avec Express.js et SQLite.
 
 ## Installation
 
@@ -20,26 +19,6 @@ Le serveur démarre sur `http://localhost:5000`. La base SQLite (`database.sqlit
 ```bash
 npm run seed
 ```
-
-⚠️ Le seed **réinitialise entièrement la base** (`sequelize.sync({ force: true })`).
-
-## Créer un compte administrateur manuellement
-
-```bash
-curl -X POST http://localhost:5000/api/admin/register \
-  -H "Content-Type: application/json" \
-  -d '{"name":"Admin","email":"admin@demo.com","password":"password123"}'
-```
-
-> En production, il est recommandé de protéger ou désactiver cette route après la création du premier admin.
-
-## Authentification
-
-Toutes les routes protégées attendent un header :
-```
-Authorization: Bearer <token>
-```
-Le token est renvoyé par `/api/auth/login` ou par les routes d'inscription.
 
 ## Principales routes
 
