@@ -26,15 +26,15 @@ export default function RegisterCandidate() {
   };
 
   return (
-    <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-6 py-12">
-      <div className="card p-8">
+    <div className="flex min-h-[80vh] items-center justify-center bg-gradient-to-br from-primary-50 via-canvas to-primary-200 px-6 py-12">
+      <div className="card w-full max-w-2xl bg-white p-8 shadow-md">
         <h1 className="text-2xl font-extrabold text-slate-900">Créer un compte candidat</h1>
         <p className="mt-1 text-sm text-slate-500">Postulez aux meilleures offres en quelques clics.</p>
 
         {error && <div className="mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-700">{error}</div>}
 
         <form onSubmit={submit} className="mt-6 space-y-4">
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label className="label">Prénom</label>
               <input required className="input" value={form.firstName} onChange={(e) => update('firstName', e.target.value)} />
@@ -44,21 +44,25 @@ export default function RegisterCandidate() {
               <input required className="input" value={form.lastName} onChange={(e) => update('lastName', e.target.value)} />
             </div>
           </div>
-          <div>
-            <label className="label">Email</label>
-            <input type="email" required className="input" value={form.email} onChange={(e) => update('email', e.target.value)} />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="label">Email</label>
+              <input type="email" required className="input" value={form.email} onChange={(e) => update('email', e.target.value)} />
+            </div>
+            <div>
+              <label className="label">Mot de passe</label>
+              <input type="password" required minLength={6} className="input" value={form.password} onChange={(e) => update('password', e.target.value)} />
+            </div>
           </div>
-          <div>
-            <label className="label">Mot de passe</label>
-            <input type="password" required minLength={6} className="input" value={form.password} onChange={(e) => update('password', e.target.value)} />
-          </div>
-          <div>
-            <label className="label">Téléphone</label>
-            <input className="input" value={form.phone} onChange={(e) => update('phone', e.target.value)} />
-          </div>
-          <div>
-            <label className="label">Titre professionnel</label>
-            <input className="input" placeholder="ex: Développeur Full-Stack" value={form.headline} onChange={(e) => update('headline', e.target.value)} />
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className="label">Téléphone</label>
+              <input className="input" value={form.phone} onChange={(e) => update('phone', e.target.value)} />
+            </div>
+            <div>
+              <label className="label">Titre professionnel</label>
+              <input className="input" placeholder="ex: Développeur Full-Stack" value={form.headline} onChange={(e) => update('headline', e.target.value)} />
+            </div>
           </div>
           <button type="submit" className="btn-primary w-full" disabled={loading}>{loading ? 'Création...' : 'Créer mon compte'}</button>
         </form>

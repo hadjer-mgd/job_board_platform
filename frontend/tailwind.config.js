@@ -5,12 +5,12 @@ export default {
     extend: {
       colors: {
         primary: {
-          50: '#eef4ff',
-          100: '#dbe6fe',
-          200: '#bcd0fe',
+          50: '#eef4ff',  
+          100: '#bedfff94', 
+          200: '#bcd0fe', 
           300: '#8fb1fc',
           400: '#5c8af8',
-          500: '#3865f0',
+          500: '#3865f0',  
           600: '#2547e3',
           700: '#1e37c4',
           800: '#1e309d',
@@ -19,6 +19,9 @@ export default {
       },
       fontFamily: {
         sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+      },
+      backgroundColor: {
+       canvas: '#eaf1ff',
       },
     },
   },

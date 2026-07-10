@@ -1,6 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import ProtectedRoute from './components/ProtectedRoute';
 
 import Home from './pages/Home';
@@ -43,7 +42,7 @@ export default function App() {
           <Route path="*" element={<div className="mx-auto max-w-3xl px-6 py-24 text-center text-slate-500">Page introuvable.</div>} />
         </Routes>
       </main>
-      <Footer />
+    
     </div>
   );
 }

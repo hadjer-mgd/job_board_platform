@@ -17,8 +17,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+<header className="sticky top-0 z-40 border-b border-primary-100 bg-white/80 backdrop-blur">      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <Link to="/" className="flex items-center gap-2 text-xl font-extrabold text-primary-700">
           <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary-600 text-white">J</span>
           JobDZ

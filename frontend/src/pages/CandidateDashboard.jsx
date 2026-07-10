@@ -16,8 +16,7 @@ export default function CandidateDashboard() {
     <div className="mx-auto max-w-6xl px-6 py-10">
       <h1 className="text-2xl font-extrabold text-slate-900">Tableau de bord candidat</h1>
 
-      <div className="mt-6 flex gap-2 border-b border-slate-200">
-        {TABS.map((t) => (
+<div className="mt-6 flex gap-2 border-b border-primary-100">        {TABS.map((t) => (
           <button
             key={t.id}
             onClick={() => setTab(t.id)}

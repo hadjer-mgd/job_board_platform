@@ -27,8 +27,8 @@ export default function Login() {
   };
 
   return (
-    <div className="mx-auto flex min-h-[70vh] max-w-md flex-col justify-center px-6 py-12">
-      <div className="card p-8">
+    <div className="flex min-h-[80vh] items-center justify-center bg-gradient-to-br from-primary-50 via-canvas to-primary-200 px-6 py-12">
+      <div className="card w-full max-w-md bg-white p-8 shadow-md">
         <h1 className="text-2xl font-extrabold text-slate-900">Connexion</h1>
         <p className="mt-1 text-sm text-slate-500">Accédez à votre espace JobDZ.</p>
 

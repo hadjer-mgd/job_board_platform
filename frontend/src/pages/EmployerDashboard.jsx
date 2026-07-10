@@ -21,8 +21,7 @@ export default function EmployerDashboard() {
         <Link to="/employer/jobs/new" className="btn-primary">+ Publier une offre</Link>
       </div>
 
-      <div className="mt-6 flex gap-2 border-b border-slate-200">
-        {TABS.map((t) => (
+<div className="mt-6 flex gap-2 border-b border-primary-100">        {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)} className={`px-4 py-2.5 text-sm font-semibold ${tab === t.id ? 'border-b-2 border-primary-600 text-primary-700' : 'text-slate-500'}`}>
             {t.label}
           </button>

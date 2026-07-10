@@ -15,8 +15,7 @@ export default function AdminDashboard() {
     <div className="mx-auto max-w-6xl px-6 py-10">
       <h1 className="text-2xl font-extrabold text-slate-900">Tableau de bord administrateur</h1>
 
-      <div className="mt-6 flex gap-2 border-b border-slate-200">
-        {TABS.map((t) => (
+<div className="mt-6 flex gap-2 border-b border-primary-100">        {TABS.map((t) => (
           <button key={t.id} onClick={() => setTab(t.id)} className={`px-4 py-2.5 text-sm font-semibold ${tab === t.id ? 'border-b-2 border-primary-600 text-primary-700' : 'text-slate-500'}`}>
             {t.label}
           </button>
