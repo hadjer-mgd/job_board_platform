@@ -1,5 +1,4 @@
- Job Board Platform : to handle job listings, employers, candidates and applications. 
-● Design database models for employers, job listings, candidates, resumes, and job applications ,for posting jobs, searching jobs, uploading resumes, applying for jobs, and tracking applications. 
+ Job Board Platform : to handle job listings, employers, candidates and applications,for posting jobs, searching jobs, uploading resumes, applying for jobs, and tracking applications. 
 
 # Frontend — JobDZ
 
