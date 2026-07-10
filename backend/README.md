@@ -1,3 +1,6 @@
+ Job Board Platform : to handle job listings, employers, candidates and applications. 
+● Design database models for employers, job listings, candidates, resumes, and job applications and for posting jobs, searching jobs, uploading resumes, applying for jobs, and tracking applications. 
+
 # Backend — Job Board API
 
 API REST construite avec Express.js et Sequelize (SQLite).
